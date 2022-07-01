@@ -120,7 +120,7 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   var multi = 1;
-  if (arguments.length == 0){
+  if (arguments.length === 0){
     return 0;
   }else{
     for (var i = 0; i < arguments.length; i++){
@@ -161,7 +161,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  if(String(n)[0] == 9){
+  if(String(n)[0] === "9"){
     return true;
   } else {
     return false;
@@ -192,11 +192,11 @@ function mesesDelAño(array) {
   var cont = 0;
   for (var i = 0; i < array.length; i++){
     for (var j = 0; j < meses.length; j++){
-      if(array[i] == meses[j]){
+      if(array[i] === meses[j]){
         cont = cont + 1;
       }
     }
-    if(cont == 3){
+    if(cont === 3){
       return meses;
     }
   }
@@ -231,7 +231,7 @@ function breakStatement(numero) {
   for (var i = 0; i < 10; i++){
     valor = valor + 2;
     sumas.push(valor);
-    if (valor == i){
+    if (valor === i){
       return "Se interrumpió la ejecución";
     }
   }
@@ -249,7 +249,7 @@ function continueStatement(numero) {
   var sumas = [];
   var valor = numero;
   for (var i = 0; i < 10; i++){
-    if (i == 5){
+    if (i === 5){
       continue;
     } else{
     valor = valor + 2;
