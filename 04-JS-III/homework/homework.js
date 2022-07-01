@@ -175,7 +175,7 @@ function todosIguales(arreglo) {
   //Escribe tu código aquí  
   var num = arreglo[0];
   for (var i = 0; i < arreglo.length; i++){
-    if (arreglo[i] != num){
+    if (arreglo[i] !== num){
       return false;
     }
   }
